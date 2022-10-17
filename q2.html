@@ -1,0 +1,46 @@
+<!--
+Q2. Apply following style to the same h2 using Javascript DOM
+Method.
+colour: red,
+fontWeight: bold,
+textTransform: uppercase
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+ <div id="myDIV">
+  <h2>This is a element.</h2>
+</div>
+
+
+<button onclick="myFunction()">Change to Red</button>
+<button onclick="myFunction1()">Change to Font Weight</button>
+<button onclick="myFunction2()">Change to TextTransform</button>
+
+<script>
+function myFunction() {
+var x = document.getElementById("myDIV");
+x.querySelector("h2").style.backgroundColor = "red";
+
+}
+
+function myFunction1() {
+var x = document.getElementById("myDIV");
+x.querySelector("h2").style.fontWeight = "bold";
+
+}
+
+function myFunction2() {
+var x = document.getElementById("myDIV");
+x.querySelector("h2").style.textTransform = "uppercase";
+
+}
+</script>
+
+</body>
+</html>
+

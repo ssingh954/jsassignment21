@@ -1,0 +1,32 @@
+<!--
+    Q7. Select all the h2 tags on screen and change their colour to purple.
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <div class="myDIV">
+        <h2>This is first Element</h2>
+        <h2>This is second Element</h2>
+    </div>
+
+
+<button onclick="myFunction()">Change to Purple</button>
+
+<script>
+function myFunction() {
+    //var x = document.getElementById("myDIV").querySelectorAll(".example");
+    var x = document.querySelectorAll(".myDIV");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "purple";
+    }    
+
+}
+
+</script>
+
+</body>
+</html>

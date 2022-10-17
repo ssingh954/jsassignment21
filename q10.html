@@ -1,0 +1,24 @@
+<!--
+    Q10. Get the number of <p> tags on the screen using JS DOM.
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Here is div-01</p>
+    <p>Here is div-02</p>
+    <h2>Here is div-03</h2>
+
+    <script>
+
+        var paragraphs = document.getElementsByTagName("p");
+        for(var i = 0; i < paragraphs.length; i++)
+        {
+            alert(paragraphs[i].innerHTML);
+        }
+
+    </script>
+
+</body>
+</html>

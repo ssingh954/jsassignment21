@@ -1,0 +1,33 @@
+<!--
+    Q11. Fetch the value of name from the following form.
+-->
+
+<head>
+    <meta charset=utf-8 />
+    </head><body>
+    <form id="form1" onsubmit="getFormvalue(); return false">
+    Name: <input type="text" id="name"><br>
+    <button type="submit">Submit</button>
+    </form>
+    </body>
+
+    <h2 id="demo"></h2>
+
+    <script>
+      function getFormvalue(){
+        var x = document.getElementById("form1").elements.item(0).value;
+        document.getElementById("demo").innerHTML = x;
+      }
+
+/*
+    function getFormvalue(){
+    var x=document.getElementById("form1");
+      for (var i=0;i<x.length;i++){
+       if (x.elements[i].value!='Submit'){  
+          //console.log(x.elements[i].value);
+         }  
+       }
+    }
+*/      
+    </script>
+    

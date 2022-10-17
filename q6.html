@@ -1,0 +1,30 @@
+<!--
+    Q6. Using alert, prevent a person from leaving the screen using JS DOM.
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+     console.log('hello');
+}
+
+window.onbeforeunload = function(){
+    myFunction();
+  return 'Are you sure you want to leave?';
+};
+
+</script>
+
+</body>
+</html>
